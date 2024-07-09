@@ -290,7 +290,7 @@ const StepFour = ({ nextStep }: { nextStep: () => void }) => {
 const StepFive = () => {
   const [charCount, setCharCount] = useState<number>(0);
   const [date, setDate] = useState<Date | undefined>();
-  const countries: string[] = [];
+  const countries: string[] = ["Bangladesh", "India", "Malaysia", "Australia"];
   const maxChars = 200;
 
   const handleTextareaChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
@@ -472,7 +472,7 @@ const StepFive = () => {
                 "flex items-center opacity-100 px-0 gap-2 pointer-events-none",
             })
           }>
-          {countries.map(({ name: string }) => (
+          {countries.map((name: string) => (
             <Option key={name} value={name} className="flex items-center gap-2">
               {name}
             </Option>
