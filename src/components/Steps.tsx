@@ -32,6 +32,9 @@ type FormStartProps = {
   step: number;
 };
 
+
+// will separate the component for better maintainability
+
 const Steps = ({ nextStep, prevStep, step }: FormStartProps) => {
   const gradientStyle = {
     backgroundImage: "linear-gradient(to bottom, #41CFD5,#407ADA  )",
