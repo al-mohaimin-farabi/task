@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./App.css";
+
+.scroll_thumb::-webkit-scrollbar {
+  width: 14px;
+}
+
+.scroll_thumb::-webkit-scrollbar-track {
+  background-color: transparent; /* Track color */
+}
+
+.scroll_thumb::-webkit-scrollbar-thumb {
+  background-color: #eaf3ff; /* Thumb color */
+  border-radius: 32px;
+}
+
+.scroll_thumb::-webkit-scrollbar-thumb:hover {
+  background-color: #eaf3ff; /* Thumb color on hover */
+}
+.custom-radio {
+    
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #02164F; 
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .custom-radio:checked {
+    background-color: #02164F; 
+    border-color: #02164F; 
+  }
